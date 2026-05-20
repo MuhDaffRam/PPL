@@ -46,13 +46,13 @@ if __name__ == "__main__":
     editor = TextEditor()
     history = HistoryManager(editor)
 
-    editor.content = "Versi 1: Pemrograman berorientasi objek."
+    editor.content = "Versi 1: Aku suka sama kamu."
     history.backup()
 
-    editor.content = "Versi 2: Pemrograman berorientasi objek sangat menyenangkan."
+    editor.content = "Versi 2: Aku yakin kita pasti bahagia."
     history.backup()
 
-    editor.content = "Versi 3: PBO membosankan dan bikin pusing (Typo/Salah ketik)."
+    editor.content = "Versi 3: Aku ga suka kamu (Typo/Salah ketik)."
     print(f"\nIsi teks sekarang: {editor.content}\n")
 
     history.undo()
